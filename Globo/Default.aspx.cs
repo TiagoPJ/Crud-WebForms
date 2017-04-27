@@ -37,6 +37,7 @@ namespace Globo
         {
             if (Request.IsAuthenticated)
             {
+                myModalLabel.Text = "New Character";
                 if (!IsPostBack)
                     LoadRegisters();
             }
@@ -62,7 +63,6 @@ namespace Globo
             {
                 string objectId = e.CommandArgument.ToString();
                 Response.Cookies.Add(authentication.AddCharacterId(objectId));
-                myModalLabel.Text = "Update Character";
                 RegisterEventJs("OpenModal('" + objectId + "');");
             }
             else if (e.CommandName == "ExcluirCharacter")

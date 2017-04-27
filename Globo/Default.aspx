@@ -58,7 +58,7 @@
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             <h3>
-                <asp:Label ID="myModalLabel" runat="server" Text="Cadastro Character"></asp:Label></h3>
+                <asp:Label ID="myModalLabel" ClientIDMode="Static" runat="server" Text="New Character"></asp:Label></h3>
         </div>
         <div class="modal-body">
             <iframe id="iframe" frameborder="0" width="100%" height="280px"></iframe>
@@ -68,17 +68,15 @@
         </div>
     </div>
     <script type="text/javascript">
-        jQuery(document).ready(function () {
-            $("#txtPhone").mask("(99)9999-9999");
-            $("#txtRg").mask("99.999.999-*");
-
-        });
-
         function OpenModal(id) {
-            if (id)
+            if (id) {
+                $("#myModalLabel").text("Update Character");
                 $('#iframe').attr('src', 'RegisterCharacters.aspx?IsInsert=false&id=' + id);
-            else
+            }
+            else {
+                $("#myModalLabel").text("New Character");
                 $('#iframe').attr('src', 'RegisterCharacters.aspx?IsInsert=true');
+            }
 
             $('#lnkModal').click();
         }

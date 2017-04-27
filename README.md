@@ -1,6 +1,10 @@
 # Globo
 Projeto Teste Globo
 
+Projeto tem como obejtivo além do cadastro do usuário para se logar no sistema, cadastrar personagens com apenas 3 identificações que são Nome, Tipo e Caracteristica, todos os usuários cadastrados e logados no sistema
+poderão cadastrar, alterar e excluir estes personagens, sistema também possui uma consulta de logs para identificar as ações dos usuários logados no sistema. As autenticações por usuário possui uma validade de 10 minutos,
+o mesmo é configurável no "web.config" do projeto.
+
 O teste que queremos que você crie é um sistema CRUD (create, read, update, delete) da maneira que se sentir mais confortável, apenas seguindo estes pré-requisitos:
 
 - Banco de dados preferencialmente NoSQL
@@ -20,7 +24,7 @@ O teste que queremos que você crie é um sistema CRUD (create, read, update, de
 	
 	
 OBS.: Fiz uma aplicação WebForms utilizando a ferramenta Visual Studio 2015 esta aplicação se encontra dentro dos moldes solicitados, espero que tenha obtido exito no minimo esperado de acordo com as avaliações.
-Em vista que estava e estou em viagens de implantação de projeto, foir ealmente desafiador e divertido entregando nos 2 dias conforme o combinado.
+Em vista que estava e estou em viagens de implantação de projeto, foi realmente desafiador e divertido entregando nos 2 dias conforme o combinado.
 
 Aplicação > http://35.184.17.111/Login.aspx
 
